@@ -1,6 +1,6 @@
 import { EmitterSubscription } from 'react-native'
 
-declare module 'react-native-bluetooth-classic' {
+declare module 'react-native-bluetooth-classic-datecs' {
     export type Device = {
         name: string,
         address: string,

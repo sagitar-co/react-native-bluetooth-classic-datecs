@@ -1,4 +1,4 @@
-package kjd.reactnative;
+package com.sagitar.reactnative;
 
 import android.util.Log;
 

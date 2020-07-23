@@ -1,4 +1,4 @@
-package kjd.reactnative.bluetooth;
+package com.sagitar.reactnative.bluetooth;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -15,7 +15,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import kjd.reactnative.RCTEventEmitter;
+import com.sagitar.reactnative.RCTEventEmitter;
 
 /**
  * Creates and updates device based on ACTION_FOUND intents.  Once completed the full list is

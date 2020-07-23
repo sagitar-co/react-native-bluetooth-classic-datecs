@@ -1,23 +1,24 @@
 {
-  "name": "react-native-bluetooth-classic",
-  "version": "0.10.9",
-  "description": "Implement bluetooth classic (serial) on Android (Bluetooth Adapter) and IOS (External Accessory)",
+  "name": "react-native-bluetooth-classic-datecs",
+  "version": "0.11.9",
+  "description": "Implement bluetooth classic (serial) on Android (Bluetooth Adapter)",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postversion": "git push && git push --tags && npm publish"
   },
-  "repository": "git://github.com/kenjdavidson/react-native-bluetooth-classic.git",
+  "repository": "git@gitlab.com:incognos/react-native-bluetooth-classic-datecs.git",
   "keywords": [
     "react-native",
     "bluetooth-classic",
     "Bluetooth Adapter",
     "Android",
     "External Accessory",
-    "IOS"
+    "Datecs"
   ],
-  "author": "Kenneth Davidson <ken.j.davidson@live.ca> (https://github.com/kenjdavidson)",
+  "author": "Sina Khelil <sina@khelil.com> (https://gitlab.com/incognos)",
   "contributors": [
+    "Kenneth Davidson <ken.j.davidson@live.ca> (https://github.com/kenjdavidson)",
     "Jakub Martyčák <martycakjakub@gmail.com> (https://github.com/rusel1989)",
     "Tony Lara <tony.lara.p@gmail.com> (https://github.com/tonyl)",
     "redloro@gmail.com (https://github.com/redloro)",
@@ -27,9 +28,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kenjdavidson/react-native-bluetooth-classic/issues"
+    "url": "https://gitlab.com/incognos/react-native-bluetooth-classic-datecs/issues"
   },
-  "homepage": "https://github.com/kenjdavidson/react-native-bluetooth-classic",
+  "homepage": "https://gitlab.com/incognos/react-native-bluetooth-classic-datecs",
   "peerDependencies": {
     "react-native": ">=0.60.0",
     "react-native-windows": "0.41.0-rc.1"

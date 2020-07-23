@@ -1,4 +1,4 @@
-package kjd.reactnative.bluetooth;
+package com.sagitar.reactnative.bluetooth;
 
 public enum BluetoothRequest {
     ENABLE_BLUETOOTH(1),

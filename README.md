@@ -1,5 +1,5 @@
 
-# react-native-bluetooth-classic
+# react-native-bluetooth-classic-datecs
 
 React Native Bluetooth Classic is meand to bridge the gap found with regards to IOS Bluetooth Classic using the External Accessory framework. 
 
@@ -19,7 +19,7 @@ Since there seem to be some breaking changes introduced within React Native 0.60
 ### Install from NPM
 
 ```
-$ npm install react-native-bluetooth-classic --save
+$ npm install react-native-bluetooth-classic-datecs --save
 ```
 
 React Native 0.60.0 [autolinking](https://github.com/react-native-community/cli/blob/master/docs/autolinking.md).
@@ -35,7 +35,7 @@ Manual installation should really only need to be used for contribution, or if t
 #### IOS Manual
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-bluetooth-classic` and add `RNBluetoothClassic.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-bluetooth-classic-datecs` and add `RNBluetoothClassic.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNBluetoothClassic.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -44,7 +44,7 @@ Manual installation should really only need to be used for contribution, or if t
 The development pod can be added updating the `Podfile` with the appropriate line:
 
 ```
-pod 'react-native-bluetooth-classic', :path => '<PATH TO RNBluetoothClassic>'
+pod 'react-native-bluetooth-classic-datecs', :path => '<PATH TO RNBluetoothClassic>'
 ```
 
 #### MFi Protocol Strings
@@ -69,16 +69,16 @@ An example of what this looks like is:
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
-  - Add `import kjd.reactnative.bluetooth.RNBluetoothClassicPackage;` to the imports at the top of the file
+  - Add `import com.sagitar.reactnative.bluetooth.RNBluetoothClassicPackage;` to the imports at the top of the file
   - Add `new RNBluetoothClassicPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-bluetooth-classic'
-  	project(':react-native-bluetooth-classic').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-bluetooth-classic/android')
+  	include ':react-native-bluetooth-classic-datecs'
+  	project(':react-native-bluetooth-classic-datecs').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-bluetooth-classic-datecs/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      implementation project(':react-native-bluetooth-classic')
+      implementation project(':react-native-bluetooth-classic-datecs')
   	```
 
 #### Windows
@@ -87,7 +87,7 @@ Windows isn't added yet - it looks like with the latest `react-native init` ther
 
 [Read it! :D](https://github.com/ReactWindows/react-native)
 
-1. In Visual Studio add the `RNBluetoothClassic.sln` in `node_modules/react-native-bluetooth-classic/windows/RNBluetoothClassic.sln` folder to their solution, reference from their app.
+1. In Visual Studio add the `RNBluetoothClassic.sln` in `node_modules/react-native-bluetooth-classic-datecs/windows/RNBluetoothClassic.sln` folder to their solution, reference from their app.
 2. Open up your `MainPage.cs` app
   - Add `using Bluetooth.Classic.RNBluetoothClassic;` to the usings at the top of the file
   - Add `new RNBluetoothClassicPackage()` to the `List<IReactPackage>` returned by the `Packages` method
@@ -138,7 +138,7 @@ The MIT License (MIT) - see full [license file](LICENSE)
 
 ## Example(s)
 
-Check out the [BluetoothClassicExample](https://github.com/kenjdavidson/react-native-bluetooth-classic/tree/master/BluetoothClassicExample) for details on getting the project setup and performing some generic tasks.   If you've got a released app that you'd like / be ok with showcasing here please let me know (or submit a pull request) - I'd love to see how the library is getting used.
+Check out the [BluetoothClassicExample](https://github.com/kenjdavidson/react-native-bluetooth-classic-datecs/tree/master/BluetoothClassicExample) for details on getting the project setup and performing some generic tasks.   If you've got a released app that you'd like / be ok with showcasing here please let me know (or submit a pull request) - I'd love to see how the library is getting used.
 
 #### Showcase
 
@@ -147,9 +147,9 @@ Check out the [BluetoothClassicExample](https://github.com/kenjdavidson/react-na
 Import the module using the following (forgive the pluralization, it just happened and it's come to far now):
 
 ```javascript
-import RNBluetoothClassic, { BTEvents, BTCharsets } from 'react-native-bluetooth-classic';
+import RNBluetoothClassic, { BTEvents, BTCharsets } from 'react-native-bluetooth-classic-datecs';
 ```
 
 In all cases the following API/Events are available within Javascript for both Android and IOS (no code splitting) if there are any native calls that are not available on the native side, the promise will be rejected with an appropriate message (kind of like UnssupportedOperationException since I'm used to Java) - I found this important as I see no point in duplicating code as the whole purpose of React Native was for me not to.
 
-for more information see the [documentation](https://kenjdavidson.github.io/react-native-bluetooth-classic).
+for more information see the [documentation](https://kenjdavidson.github.io/react-native-bluetooth-classic-datecs).

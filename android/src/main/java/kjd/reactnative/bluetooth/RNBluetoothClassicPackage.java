@@ -1,5 +1,5 @@
 
-package kjd.reactnative.bluetooth;
+package com.sagitar.reactnative.bluetooth;
 
 import java.nio.charset.Charset;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-import kjd.reactnative.CommonCharsets;
+import com.sagitar.reactnative.CommonCharsets;
 
 /**
  * Registers the RNBluetoothClassicModule with ReactNative.  The package is used to configure the

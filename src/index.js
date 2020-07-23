@@ -13,7 +13,7 @@ import { DeviceEventEmitter, NativeEventEmitter, NativeModules, Platform } from 
  * more annoying up front and would therefore want to be reminded of in whenever fixes
  * or features are added.
  */
-class RNBluetoothClassic extends NativeEventEmitter {
+class RNBluetoothClassicDatecs extends NativeEventEmitter {
   constructor(nativeModule) {
     super(nativeModule)
 
@@ -130,5 +130,5 @@ class RNBluetoothClassic extends NativeEventEmitter {
 
 export const BTEvents = NativeModules.RNBluetoothClassic.BTEvents;
 export const BTCharsets = NativeModules.RNBluetoothClassic.BTCharsets;
-export default new RNBluetoothClassic(NativeModules.RNBluetoothClassic);
+export default new RNBluetoothClassicDatecs(NativeModules.RNBluetoothClassic);
 

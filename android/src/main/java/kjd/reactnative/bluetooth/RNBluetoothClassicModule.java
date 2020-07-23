@@ -1,5 +1,5 @@
 
-package kjd.reactnative.bluetooth;
+package com.sagitar.reactnative.bluetooth;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -34,8 +34,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import javax.annotation.Nullable;
 
-import kjd.reactnative.CommonCharsets;
-import kjd.reactnative.RCTEventEmitter;
+import com.sagitar.reactnative.CommonCharsets;
+import com.sagitar.reactnative.RCTEventEmitter;
 
 /**
  * Provides bridge between native Android functionality and React Native javascript.  Provides

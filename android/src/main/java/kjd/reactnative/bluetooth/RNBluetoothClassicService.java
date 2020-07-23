@@ -1,4 +1,4 @@
-package kjd.reactnative.bluetooth;
+package com.sagitar.reactnative.bluetooth;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
