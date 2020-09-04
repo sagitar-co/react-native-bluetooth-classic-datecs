@@ -6,7 +6,7 @@ import { DeviceEventEmitter, NativeEventEmitter, NativeModules, Platform } from 
  * Combines some common functionality between NativeEventEmitter and DeviceEventEmitter for
  * IOS and Android respectively.  The key thing here is that we need to:
  * - Make the Native methods available in JS (check)
- * - Make the add|remove listener functionality available in JS(check)
+ * - Make the add|remove listener functionality available in JS (check)
  * - Make the remove() functionality available in JS (check)
  *
  * I decided to stick with the IOS side as the main way of doing things because I found it
